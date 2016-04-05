@@ -18,7 +18,7 @@
  * @since      1.0.0
  * @package    Google_VR_Views
  * @subpackage Google_VR_Views/includes
- * @author     Your Name <email@example.com>
+ * @author     Daniel Walmsley <goldsounds@gmail.com>
  */
 class Google_VR_Views_Deactivator {
 
