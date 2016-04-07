@@ -154,6 +154,9 @@ class Google_VR_Views {
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
 
+		// render the VR View in the editor
+		wp_embed_register_handler( 'google-vr-views', '#\[vrview.*(?:video|image)="(.*?)".*\]#i', array( $plugin_admin, 'render_vrview_editor_embed' ) );
+
 	}
 
 	/**

@@ -100,4 +100,9 @@ class Google_VR_Views_Admin {
 
 	}
 
+	public function render_vrview_editor_embed( $matches, $attr, $url, $rawattr ) {
+		$public_renderer = new Google_VR_Views_Public( $this->google_vr_views, $this->version );
+		return $public_renderer->render_vrview_shortcode( array( 'image' => 'http://google.com' ) );
+	}
+
 }
