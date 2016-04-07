@@ -22,7 +22,7 @@
  * @link       http://example.com
  * @since      1.0.0
  *
- * @package    Google_VR_Views
+ * @package    VR_Views
  */
 
 // If uninstall not called from WordPress, then exit.

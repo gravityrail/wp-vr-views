@@ -6,8 +6,8 @@
  * @link       http://example.com
  * @since      1.0.0
  *
- * @package    Google_VR_Views
- * @subpackage Google_VR_Views/includes
+ * @package    VR_Views
+ * @subpackage VR_Views/includes
  */
 
 /**
@@ -16,11 +16,11 @@
  * This class defines all code necessary to run during the plugin's activation.
  *
  * @since      1.0.0
- * @package    Google_VR_Views
- * @subpackage Google_VR_Views/includes
+ * @package    VR_Views
+ * @subpackage VR_Views/includes
  * @author     Daniel Walmsley <goldsounds@gmail.com>
  */
-class Google_VR_Views_Activator {
+class VR_Views_Activator {
 
 	/**
 	 * Short Description. (use period)

@@ -1,4 +1,4 @@
-=== Google VR View ===
+=== VR Views ===
 
 Contributors: Daniel Walmsley
 Donate link: http://goldsounds.com/
@@ -39,9 +39,9 @@ You can see the shortcode above in action here: http://goldsounds.com/vrview-tes
 
 == Installation ==
 
-1. Upload `google-vr-views.php` to the `/wp-content/plugins/` directory
+1. Upload `vr-views.php` to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Place `<?php do_action('google_vr_views_hook'); ?>` in your templates
+1. Place `<?php do_action('vr_views_hook'); ?>` in your templates
 
 == Screenshots ==
 

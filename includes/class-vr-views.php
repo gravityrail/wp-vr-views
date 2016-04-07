@@ -9,8 +9,8 @@
  * @link       http://example.com
  * @since      1.0.0
  *
- * @package    Google_VR_Views
- * @subpackage Google_VR_Views/includes
+ * @package    VR_Views
+ * @subpackage VR_Views/includes
  */
 
 /**
@@ -23,11 +23,11 @@
  * version of the plugin.
  *
  * @since      1.0.0
- * @package    Google_VR_Views
- * @subpackage Google_VR_Views/includes
+ * @package    VR_Views
+ * @subpackage VR_Views/includes
  * @author     Daniel Walmsley <goldsounds@gmail.com>
  */
-class Google_VR_Views {
+class VR_Views {
 
 	/**
 	 * The loader that's responsible for maintaining and registering all hooks that power
@@ -35,7 +35,7 @@ class Google_VR_Views {
 	 *
 	 * @since    1.0.0
 	 * @access   protected
-	 * @var      Google_VR_Views_Loader    $loader    Maintains and registers all hooks for the plugin.
+	 * @var      VR_Views_Loader    $loader    Maintains and registers all hooks for the plugin.
 	 */
 	protected $loader;
 
@@ -44,9 +44,9 @@ class Google_VR_Views {
 	 *
 	 * @since    1.0.0
 	 * @access   protected
-	 * @var      string    $google_vr_views    The string used to uniquely identify this plugin.
+	 * @var      string    $vr_views    The string used to uniquely identify this plugin.
 	 */
-	protected $google_vr_views;
+	protected $vr_views;
 
 	/**
 	 * The current version of the plugin.
@@ -68,7 +68,7 @@ class Google_VR_Views {
 	 */
 	public function __construct() {
 
-		$this->google_vr_views = 'google-vr-views';
+		$this->vr_views = 'vr-views';
 		$this->version = '1.0.0';
 
 		$this->load_dependencies();
@@ -83,10 +83,10 @@ class Google_VR_Views {
 	 *
 	 * Include the following files that make up the plugin:
 	 *
-	 * - Google_VR_Views_Loader. Orchestrates the hooks of the plugin.
-	 * - Google_VR_Views_i18n. Defines internationalization functionality.
-	 * - Google_VR_Views_Admin. Defines all hooks for the admin area.
-	 * - Google_VR_Views_Public. Defines all hooks for the public side of the site.
+	 * - VR_Views_Loader. Orchestrates the hooks of the plugin.
+	 * - VR_Views_i18n. Defines internationalization functionality.
+	 * - VR_Views_Admin. Defines all hooks for the admin area.
+	 * - VR_Views_Public. Defines all hooks for the public side of the site.
 	 *
 	 * Create an instance of the loader which will be used to register the hooks
 	 * with WordPress.
@@ -100,33 +100,33 @@ class Google_VR_Views {
 		 * The class responsible for orchestrating the actions and filters of the
 		 * core plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-google-vr-views-loader.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-vr-views-loader.php';
 
 		/**
 		 * The class responsible for defining internationalization functionality
 		 * of the plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-google-vr-views-i18n.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-vr-views-i18n.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the admin area.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-google-vr-views-admin.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-vr-views-admin.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the public-facing
 		 * side of the site.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-google-vr-views-public.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-vr-views-public.php';
 
-		$this->loader = new Google_VR_Views_Loader();
+		$this->loader = new VR_Views_Loader();
 
 	}
 
 	/**
 	 * Define the locale for this plugin for internationalization.
 	 *
-	 * Uses the Google_VR_Views_i18n class in order to set the domain and to register the hook
+	 * Uses the VR_Views_i18n class in order to set the domain and to register the hook
 	 * with WordPress.
 	 *
 	 * @since    1.0.0
@@ -134,7 +134,7 @@ class Google_VR_Views {
 	 */
 	private function set_locale() {
 
-		$plugin_i18n = new Google_VR_Views_i18n();
+		$plugin_i18n = new VR_Views_i18n();
 
 		$this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
 
@@ -149,13 +149,13 @@ class Google_VR_Views {
 	 */
 	private function define_admin_hooks() {
 
-		$plugin_admin = new Google_VR_Views_Admin( $this->get_google_vr_views(), $this->get_version() );
+		$plugin_admin = new VR_Views_Admin( $this->get_vr_views(), $this->get_version() );
 
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
 
 		// render the VR View in the editor
-		wp_embed_register_handler( 'google-vr-views', '#\[vrview.*(?:video|image)="(.*?)".*\]#i', array( $plugin_admin, 'render_vrview_editor_embed' ) );
+		wp_embed_register_handler( 'vr-views', '#\[vrview.*(?:video|image)="(.*?)".*\]#i', array( $plugin_admin, 'render_vrview_editor_embed' ) );
 
 	}
 
@@ -168,7 +168,7 @@ class Google_VR_Views {
 	 */
 	private function define_public_hooks() {
 
-		$plugin_public = new Google_VR_Views_Public( $this->get_google_vr_views(), $this->get_version() );
+		$plugin_public = new VR_Views_Public( $this->get_vr_views(), $this->get_version() );
 
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
@@ -193,15 +193,15 @@ class Google_VR_Views {
 	 * @since     1.0.0
 	 * @return    string    The name of the plugin.
 	 */
-	public function get_google_vr_views() {
-		return $this->google_vr_views;
+	public function get_vr_views() {
+		return $this->vr_views;
 	}
 
 	/**
 	 * The reference to the class that orchestrates the hooks with the plugin.
 	 *
 	 * @since     1.0.0
-	 * @return    Google_VR_Views_Loader    Orchestrates the hooks of the plugin.
+	 * @return    VR_Views_Loader    Orchestrates the hooks of the plugin.
 	 */
 	public function get_loader() {
 		return $this->loader;

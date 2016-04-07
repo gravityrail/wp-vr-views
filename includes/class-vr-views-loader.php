@@ -6,8 +6,8 @@
  * @link       http://example.com
  * @since      1.0.0
  *
- * @package    Google_VR_Views
- * @subpackage Google_VR_Views/includes
+ * @package    VR_Views
+ * @subpackage VR_Views/includes
  */
 
 /**
@@ -17,11 +17,11 @@
  * the plugin, and register them with the WordPress API. Call the
  * run function to execute the list of actions and filters.
  *
- * @package    Google_VR_Views
- * @subpackage Google_VR_Views/includes
+ * @package    VR_Views
+ * @subpackage VR_Views/includes
  * @author     Daniel Walmsley <goldsounds@gmail.com>
  */
-class Google_VR_Views_Loader {
+class VR_Views_Loader {
 
 	/**
 	 * The array of actions registered with WordPress.

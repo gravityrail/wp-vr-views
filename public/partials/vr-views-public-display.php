@@ -8,8 +8,8 @@
  * @link       http://example.com
  * @since      1.0.0
  *
- * @package    Google_VR_Views
- * @subpackage Google_VR_Views/public/partials
+ * @package    VR_Views
+ * @subpackage VR_Views/public/partials
  */
 ?>
 

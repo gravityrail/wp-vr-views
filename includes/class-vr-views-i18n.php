@@ -9,8 +9,8 @@
  * @link       http://example.com
  * @since      1.0.0
  *
- * @package    Google_VR_Views
- * @subpackage Google_VR_Views/includes
+ * @package    VR_Views
+ * @subpackage VR_Views/includes
  */
 
 /**
@@ -20,11 +20,11 @@
  * so that it is ready for translation.
  *
  * @since      1.0.0
- * @package    Google_VR_Views
- * @subpackage Google_VR_Views/includes
+ * @package    VR_Views
+ * @subpackage VR_Views/includes
  * @author     Daniel Walmsley <goldsounds@gmail.com>
  */
-class Google_VR_Views_i18n {
+class VR_Views_i18n {
 
 
 	/**
@@ -35,7 +35,7 @@ class Google_VR_Views_i18n {
 	public function load_plugin_textdomain() {
 
 		load_plugin_textdomain(
-			'google-vr-views',
+			'vr-views',
 			false,
 			dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/'
 		);
