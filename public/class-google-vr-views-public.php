@@ -100,4 +100,28 @@ class Google_VR_Views_Public {
 
 	}
 
+	// [vrview url="to/my/image"]
+	// <iframe width="100%" allowfullscreen frameborder="0" src="//storage.googleapis.com/vrview/index.html?image=//photovrse.com/examples/coral.jpg&is_stereo=true"></iframe>
+	public function render_vrview_shortcode( $atts ) {
+		$a = shortcode_atts( array(
+			//image or video are required
+			'image'     => NULL,
+			'video'     => NULL,
+			'preview'   => NULL,
+			'is_stereo' => false,
+			'start_yaw' => 0,
+			'is_yaw_only' => false,
+		), $atts );
+
+		if ( !isset( $a['video'] ) && !isset( $a['image'] ) ) {
+			return "Error: vrview requires 'image' or 'video' to be set";
+		}
+
+		$iframe_url = plugin_dir_url( __FILE__ ) . 'html/vrview.html';
+		$iframe_url = add_query_arg( $a, $iframe_url );
+
+		return <<<ENDHTML
+			<iframe class="vrview" width="100%" allowfullscreen frameborder="0" src="$iframe_url"></iframe>
+ENDHTML;
+	}
 }

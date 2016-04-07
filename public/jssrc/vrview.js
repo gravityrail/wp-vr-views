@@ -1,0 +1,1 @@
+require( 'vrview/build/vrview' );

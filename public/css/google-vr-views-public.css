@@ -2,3 +2,12 @@
  * All of the CSS for your public-facing functionality should be
  * included in this file.
  */
+
+@media screen and (min-width: 600px) {
+	iframe.vrview {
+		height: 400px;
+		width: 700px;
+		margin: 1rem auto;
+		display: block;
+	}	
+}
