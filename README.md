@@ -1,4 +1,5 @@
-=== Plugin Name ===
+=== Google VR View ===
+
 Contributors: Daniel Walmsley
 Donate link: http://goldsounds.com/
 Tags: comments, spam
