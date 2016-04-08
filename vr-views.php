@@ -8,7 +8,7 @@
  *
  * @wordpress-plugin
  * Plugin Name:       VR Views
- * Plugin URI:        http://goldsounds.com/plugins/vr-views
+ * Plugin URI:        http://goldsounds.com/open-source-projects/
  * Description:       Display Google's VR Views in a browser a compatible VR devices
  * Version:           1.0.0
  * Author:            Daniel Walmsley
