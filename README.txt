@@ -3,7 +3,7 @@
 Contributors: Daniel Walmsley
 Donate link: http://goldsounds.com/
 Tags: vr, images, video, 360, photosphere
-Requires at least: 4.4
+Requires at least: 3.9
 Tested up to: 4.5
 Stable tag: trunk
 License: GPLv2 or later
