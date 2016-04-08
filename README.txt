@@ -2,7 +2,7 @@
 
 Contributors: Daniel Walmsley
 Donate link: http://goldsounds.com/
-Tags: comments, spam
+Tags: vr, images, video, 360
 Requires at least: 4.4
 Tested up to: 4.5
 Stable tag: 4.4
