@@ -2,7 +2,7 @@
 
 Contributors: Daniel Walmsley
 Donate link: http://goldsounds.com/
-Tags: vr, images, video, 360
+Tags: vr, images, video, 360, photosphere
 Requires at least: 4.4
 Tested up to: 4.5
 Stable tag: trunk
@@ -10,6 +10,8 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Renders Google VR Views using the [vrview] shortcode. https://developers.google.com/cardboard/vrview
+
+Embed photospheres and 360 degree videos in mono or stereoscopic formats, and view in "VR Mode" using Google Cardboard.
 
 == Description ==
 
