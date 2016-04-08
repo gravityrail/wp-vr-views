@@ -2,7 +2,7 @@
 
 Contributors: Daniel Walmsley
 Donate link: http://goldsounds.com/
-Tags: vr, images, video, 360, photosphere
+Tags: vr, images, video, 360, photosphere, virtual reality, google cardboard
 Requires at least: 3.9
 Tested up to: 4.5
 Stable tag: trunk
