@@ -50,6 +50,10 @@ You can see the shortcode above in action here: http://goldsounds.com/vrview-tes
 1. Sample in Android Chrome
 2. Sample in Android Chrome with "VR Mode" enabled (Cardboard-compatible)
 
+== Credits ==
+
+Virtual Reality Goggles icon by Felisberto Piazza from the Noun Project
+
 == Changelog ==
 
 = 1.0 =
