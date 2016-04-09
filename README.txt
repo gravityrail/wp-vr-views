@@ -1,6 +1,6 @@
 === VR Views ===
 
-Contributors: Daniel Walmsley
+Contributors: goldsounds
 Donate link: http://goldsounds.com/
 Tags: vr, images, video, 360, photosphere, virtual reality, google cardboard
 Requires at least: 3.9
