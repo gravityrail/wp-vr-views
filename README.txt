@@ -5,17 +5,15 @@ Donate link: http://goldsounds.com/
 Tags: vr, images, video, 360, photosphere, virtual reality, google cardboard
 Requires at least: 3.9
 Tested up to: 4.5
-Stable tag: trunk
+Stable tag: 1.5.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Embed photospheres and 360 degree videos in mono or stereoscopic formats, and view in "VR Mode" using Google Cardboard.
 
-Renders Google VR Views using the [vrview] shortcode. https://developers.google.com/cardboard/vrview
-
 == Description ==
 
-This plugin allows you to embed 360' mono-and-stereoscopic images and videos into your WordPress website using Google's "VR Views" library. On devices supporting VR (such as Google Cardboard devices), a link appears that will display the content in full-screen VR mode.
+This plugin provides a [vrview] shortcode that embeds 360' mono-and-stereoscopic images and videos into your WordPress website using Google's "[VR Views](https://developers.google.com/cardboard/vrview)" library. On devices supporting VR (such as Google Cardboard devices), a link appears that will display the content in full-screen VR mode.
 
 As per the VR Views spec:
 
@@ -38,6 +36,11 @@ e.g. [vrview image="//photovrse.com/examples/coral.jpg" is_stereo="true"]
 The content itself could be captured on any device which supports capturing 360 images or video. My preferred app is the [Google Cardboard Camera](https://play.google.com/store/apps/details?id=com.google.vr.cyclops&hl=en) (Android-only)
 
 You can see the shortcode above in action here: http://goldsounds.com/vrview-test/
+
+For tips on converting Cardboard Camera images, check out these resources:
+
+* http://vectorcult.com/2015/12/extracting-the-audio-stereo-pair-from-cardboard-camera-3d-panoramic-images/
+* http://edward.io/blog/extracting-google-cardboard-photos.html
 
 == Installation ==
 

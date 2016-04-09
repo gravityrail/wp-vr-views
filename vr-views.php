@@ -10,7 +10,7 @@
  * Plugin Name:       VR Views
  * Plugin URI:        http://goldsounds.com/open-source-projects/
  * Description:       Display Google's VR Views in a browser a compatible VR devices
- * Version:           1.0.0
+ * Version:           1.5.0
  * Author:            Daniel Walmsley
  * Author URI:        http://goldsounds.com/
  * License:           GPL-2.0+
