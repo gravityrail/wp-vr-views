@@ -5,7 +5,7 @@
 # main config
 PLUGINSLUG="vr-views"
 CURRENTDIR=`pwd`
-MAINFILE="gltf.php" # this should be the name of your main php file in the wordpress plugin
+MAINFILE="vr-views.php" # this should be the name of your main php file in the wordpress plugin
 
 # git config
 GITPATH="$CURRENTDIR/" # this file should be in the base of your git repository
